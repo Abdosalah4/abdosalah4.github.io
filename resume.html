@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdelrahman Mohamed Salah | Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & Page Setup */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0F172A;
+      color: #F8FAFC;
+      line-height: 1.5;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .resume-container {
+      width: 100%;
+      max-width: 800px;
+      background: rgba(30, 41, 59, 0.45);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 260px 1fr;
+    }
+
+    /* Print action floating button */
+    .print-actions {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+
+    .print-btn {
+      background: linear-gradient(135deg, #00C896 0%, #059669 100%);
+      color: #0F172A;
+      font-weight: 700;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+      box-shadow: 0 4px 15px rgba(0, 200, 150, 0.3);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      transition: all 0.2s ease;
+    }
+
+    .print-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 200, 150, 0.5);
+    }
+
+    /* Sidebar Column */
+    .sidebar {
+      background-color: #0A0F1D;
+      border-right: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 30px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .profile-section {
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      padding-bottom: 20px;
+    }
+
+    .avatar-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2.5px solid #00C896;
+      margin: 0 auto 12px auto;
+      object-fit: cover;
+      display: block;
+    }
+
+    .profile-name {
+      font-size: 1.15rem;
+      font-weight: 800;
+      line-height: 1.2;
+      color: #FFFFFF;
+      margin-bottom: 4px;
+    }
+
+    .profile-title {
+      font-size: 0.75rem;
+      font-family: 'JetBrains Mono', monospace;
+      color: #00C896;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .section-box-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+      border-left: 3px solid #22D3EE;
+      padding-left: 8px;
+    }
+
+    .contact-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .contact-item {
+      font-size: 0.75rem;
+      color: #94A3B8;
+      word-break: break-all;
+    }
+
+    .contact-item strong {
+      color: #FFFFFF;
+      display: block;
+      margin-bottom: 2px;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+    }
+
+    .contact-item a {
+      color: #22D3EE;
+      text-decoration: none;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .skill-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.62rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      color: #E2E8F0;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    .education-box {
+      font-size: 0.75rem;
+      color: #94A3B8;
+    }
+
+    .education-box strong {
+      color: #FFFFFF;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    /* Main Area Column */
+    .main-content {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .main-section-title {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      padding-bottom: 6px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .summary-text {
+      font-size: 0.85rem;
+      color: #94A3B8;
+      line-height: 1.6;
+    }
+
+    .experience-item, .project-item {
+      margin-bottom: 16px;
+    }
+
+    .experience-item:last-child, .project-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 4px;
+    }
+
+    .item-title {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+
+    .item-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      color: #00C896;
+      font-weight: 600;
+    }
+
+    .item-subtitle {
+      font-size: 0.75rem;
+      color: #22D3EE;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+
+    .item-desc {
+      font-size: 0.8rem;
+      color: #94A3B8;
+      line-height: 1.5;
+    }
+
+    .item-bullets {
+      margin-top: 6px;
+      padding-left: 14px;
+    }
+
+    .item-bullets li {
+      font-size: 0.78rem;
+      color: #94A3B8;
+      list-style-type: circle;
+      margin-bottom: 3px;
+    }
+
+    /* Print Specific Styles */
+    @media print {
+      body {
+        background-color: #FFFFFF;
+        color: #0F172A;
+        padding: 0;
+      }
+      
+      .print-actions {
+        display: none;
+      }
+
+      .resume-container {
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        background: #FFFFFF;
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 240px 1fr;
+      }
+
+      .sidebar {
+        background-color: #F8FAFC;
+        border-right: 1.5px solid #E2E8F0;
+        padding: 20px 15px;
+      }
+
+      .avatar-img {
+        border-color: #059669;
+      }
+
+      .profile-name {
+        color: #0F172A;
+      }
+
+      .profile-title {
+        color: #059669;
+      }
+
+      .section-box-title {
+        color: #0F172A;
+        border-left-color: #0284C7;
+      }
+
+      .contact-item {
+        color: #475569;
+      }
+
+      .contact-item strong {
+        color: #0F172A;
+      }
+
+      .contact-item a {
+        color: #0284C7;
+      }
+
+      .skill-tag {
+        background: #F1F5F9;
+        border-color: #E2E8F0;
+        color: #334155;
+      }
+
+      .education-box {
+        color: #475569;
+      }
+
+      .education-box strong {
+        color: #0F172A;
+      }
+
+      .main-content {
+        padding: 20px 24px;
+      }
+
+      .main-section-title {
+        color: #0F172A;
+        border-bottom-color: #E2E8F0;
+      }
+
+      .summary-text {
+        color: #475569;
+      }
+
+      .item-title {
+        color: #0F172A;
+      }
+
+      .item-date {
+        color: #059669;
+      }
+
+      .item-subtitle {
+        color: #0284C7;
+      }
+
+      .item-desc {
+        color: #475569;
+      }
+
+      .item-bullets li {
+        color: #475569;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Print Button -->
+  <div class="print-actions">
+    <button class="print-btn" onclick="window.print()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+      <span>Print / PDF</span>
+    </button>
+  </div>
+
+  <div class="resume-container">
+    <!-- Sidebar Column -->
+    <aside class="sidebar">
+      <div class="profile-section">
+        <img src="assets/profile.jpg" alt="Abdelrahman Salah" class="avatar-img">
+        <h1 class="profile-name">Abdelrahman Salah</h1>
+        <div class="profile-title">Flutter Developer</div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-box">
+        <h2 class="section-box-title">Contact</h2>
+        <div class="contact-list">
+          <div class="contact-item">
+            <strong>Location</strong>
+            Zagazig, Egypt
+          </div>
+          <div class="contact-item">
+            <strong>Email</strong>
+            <a href="mailto:abdosalah112233444@gmail.com">abdosalah112233444@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <strong>Phone</strong>
+            <a href="tel:+201024713596">+20 1024713596</a>
+          </div>
+          <div class="contact-item">
+            <strong>GitHub</strong>
+            <a href="https://github.com/Abdosalah4" target="_blank">github.com/Abdosalah4</a>
+          </div>
+          <div class="contact-item">
+            <strong>LinkedIn</strong>
+            <a href="https://www.linkedin.com/in/abdelrahman-salah-829b8325a" target="_blank">linkedin.com/in/abdelrahman-salah-829b8325a</a>
+          </div>
+          <div class="contact-item">
+            <strong>Kafiil (Freelance)</strong>
+            <a href="https://kafiil.com/u/abdo_salah7/services" target="_blank">kafiil.com/u/abdo_salah7</a>
+          </div>
+          <div class="contact-item">
+            <strong>Nafezly (Freelance)</strong>
+            <a href="https://nafezly.com/u/abdo_salah_" target="_blank">nafezly.com/u/abdo_salah_</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Core Skills -->
+      <div class="skills-box">
+        <h2 class="section-box-title">Core Skills</h2>
+        <div class="skills-list">
+          <span class="skill-tag">Flutter</span>
+          <span class="skill-tag">Dart</span>
+          <span class="skill-tag">Cubit</span>
+          <span class="skill-tag">MVVM</span>
+          <span class="skill-tag">Clean Arch</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">Dio</span>
+          <span class="skill-tag">Firebase</span>
+          <span class="skill-tag">Git &amp; GitHub</span>
+          <span class="skill-tag">Material Design</span>
+          <span class="skill-tag">Responsive UI</span>
+          <span class="skill-tag">Local Alerts</span>
+        </div>
+      </div>
+
+      <!-- Education Box -->
+      <div class="education-box-container">
+        <h2 class="section-box-title">Education</h2>
+        <div class="education-box">
+          <strong>B.Sc. Computers &amp; Information</strong>
+          Faculty of Computers &amp; Information<br>
+          Zagazig University (2022–2026)
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Column -->
+    <main class="main-content">
+      <!-- Profile Summary -->
+      <section>
+        <h2 class="main-section-title">Summary</h2>
+        <p class="summary-text">
+          Dedicated and results-oriented Flutter Developer with practical experience in building clean, responsive, and high-performance cross-platform mobile applications. Specialized in structuring clean architectures (MVVM, Clean Architecture) and reactive state management (Cubit). Experienced in integrating third-party REST APIs and Google Firebase services. Adaptable team player comfortable working inside collaborative sprints or delivering standalone freelance solutions.
+        </p>
+      </section>
+
+      <!-- Development Experience -->
+      <section>
+        <h2 class="main-section-title">Experience</h2>
+
+        <!-- Course -->
+        <!-- Graduation Project - MediMate -->
+        <div class="experience-item">
+          <div class="item-header">
+            <h3 class="item-title">Graduation Project — MediMate (صيدلتي)</h3>
+            <span class="item-date">2026</span>
+          </div>
+          <div class="item-subtitle">Lead Flutter Developer | Firebase</div>
+          <p class="item-desc">Developed MediMate (صيدلتي), a smart medication management application featuring scheduled alarms with local offline notifications, Firebase Cloud Firestore/Auth integration, family profiles, inventory tracking, and clean MVVM &amp; Cubit architecture.</p>
+        </div>
+
+        <!-- NTI Program -->
+        <div class="experience-item">
+          <div class="item-header">
+            <h3 class="item-title">Flutter Mobile App Development Program (120 Hours)</h3>
+            <span class="item-date">2026</span>
+          </div>
+          <div class="item-subtitle">National Telecommunication Institute (NTI)</div>
+          <p class="item-desc">Completed intensive training focusing on Flutter/Dart, Firebase backend systems, REST APIs integration, Cubit state management, MVVM, Clean Architecture, Git/GitHub, and responsive UI development.</p>
+        </div>
+
+        <!-- Personal Flutter Projects -->
+        <div class="experience-item">
+          <div class="item-header">
+            <h3 class="item-title">Personal Flutter Projects</h3>
+            <span class="item-date">2025 - Present</span>
+          </div>
+          <div class="item-subtitle">Flutter Developer</div>
+          <p class="item-desc">Designed and built multiple mobile apps (MediMate (صيدلتي), E-Commerce, Weather forecast clients, ToDo organizers) to master offline database caching, reactive state flows, API connections, and performance optimization.</p>
+        </div>
+
+        <!-- Freelance Experience -->
+        <div class="experience-item">
+          <div class="item-header">
+            <h3 class="item-title">Freelance Experience</h3>
+            <span class="item-date">2026</span>
+          </div>
+          <div class="item-subtitle">Kafiil &amp; Nafezly Platforms</div>
+          <p class="item-desc">Completed custom paid Flutter tasks for remote clients, including UI improvements, bug fixing, feature enhancements, responsive layout adjustments, and code maintenance.</p>
+        </div>
+
+        <!-- Continuous Learning -->
+        <div class="experience-item">
+          <div class="item-header">
+            <h3 class="item-title">Continuous Learning</h3>
+            <span class="item-date">2024 - Present</span>
+          </div>
+          <div class="item-subtitle">Flutter &amp; Dart Ecosystems</div>
+          <p class="item-desc">Consistently upgrading technical skills through documentation research, articles, and courses covering mobile performance optimization, design patterns, and clean code.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>

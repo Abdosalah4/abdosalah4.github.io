@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdelrahman Salah | Premium Flutter Developer Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Abdelrahman Mohamed Salah Eldin Farag, a professional Flutter Developer specialized in clean UI, high performance, REST API integration, and clean architecture (MVVM, Cubit). Zagazig, Egypt.">
+  <meta name="keywords" content="Flutter, Dart, Mobile Developer, App Development, Android, iOS, Cubit, MVVM, Clean Architecture, Abdelrahman Salah, Zagazig, Egypt, Portfolio">
+  <meta name="author" content="Abdelrahman Mohamed Salah Eldin Farag">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Abdelrahman Salah | Premium Flutter Developer Portfolio">
+  <meta property="og:description" content="Flutter Developer specialized in clean UI, high performance, API integration, and clean architecture (MVVM, Cubit). Zagazig, Egypt.">
+  <meta property="og:image" content="assets/avatar.svg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Abdelrahman Salah | Premium Flutter Developer Portfolio">
+  <meta property="twitter:description" content="Flutter Developer specialized in clean UI, high performance, API integration, and clean architecture (MVVM, Cubit). Zagazig, Egypt.">
+  <meta property="twitter:image" content="assets/avatar.svg">
+
+  <!-- Google Fonts (Poppins & JetBrains Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Interactive Cursor (Desktop only) -->
+  <div id="custom-cursor" class="custom-cursor"></div>
+  <div id="custom-cursor-dot" class="custom-cursor-dot"></div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+  <!-- Glassmorphism Header -->
+  <header id="header">
+    <div class="container header-container">
+      <a href="#hero" class="logo">
+        <span class="logo-accent">&lt;</span>AbdoSalah<span class="logo-accent"> /&gt;</span>
+      </a>
+      
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link active">About</a></li>
+          <li><a href="#tech-stack" class="nav-link">Stack</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#github" class="nav-link">GitHub</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons in Nav -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-sm btn-outline">Hire Me</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <a href="#hero" class="logo">
+        <span class="logo-accent">&lt;</span>AbdoSalah<span class="logo-accent"> /&gt;</span>
+      </a>
+      <button class="drawer-close" id="drawer-close" aria-label="Close Menu">&times;</button>
+    </div>
+    <nav class="drawer-nav">
+      <ul class="drawer-list">
+        <li><a href="#about" class="drawer-link">About</a></li>
+        <li><a href="#tech-stack" class="drawer-link">Stack</a></li>
+        <li><a href="#skills" class="drawer-link">Skills</a></li>
+        <li><a href="#services" class="drawer-link">Services</a></li>
+        <li><a href="#projects" class="drawer-link">Projects</a></li>
+        <li><a href="#experience" class="drawer-link">Experience</a></li>
+        <li><a href="#github" class="drawer-link">GitHub</a></li>
+        <li><a href="#contact" class="drawer-link">Contact</a></li>
+      </ul>
+      <div class="drawer-actions">
+        <a href="resume.html" class="btn btn-primary" target="_blank">View Resume</a>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="section hero-section">
+      <div class="container hero-grid">
+        <!-- Hero Details -->
+        <div class="hero-content">
+          <div class="badge hero-badge">Available for Work</div>
+          
+          <h1 class="hero-title">
+            <span class="hero-name">Abdelrahman Salah</span>
+            <span class="hero-role-wrapper">
+              <span class="hero-role" id="typed-role">Flutter Developer</span>
+            </span>
+          </h1>
+          
+          <p class="hero-subtitle">
+            Flutter Developer with practical experience in building real-world mobile applications using Flutter and Dart — focused on clean UI, performance, and API integration.
+          </p>
+          
+          <div class="hero-ctas">
+            <a href="resume.html" class="btn btn-primary btn-icon" target="_blank" download="Abdelrahman_Salah_Resume.pdf">
+              <span>Download CV</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+            <a href="#projects" class="btn btn-text btn-icon">
+              <span>View Projects</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+
+          <!-- Social links -->
+          <div class="hero-socials">
+            <a href="https://github.com/Abdosalah4" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/abdelrahman-salah-829b8325a" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://kafiil.com/u/abdo_salah7/services" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Kafiil Profile">
+              <span class="social-text-icon">K</span>
+            </a>
+            <a href="https://nafezly.com/u/abdo_salah_" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Nafezly Profile">
+              <span class="social-text-icon">N</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Phone Mockup Container (Signature Animation) -->
+        <div class="hero-visual">
+          <div class="mockup-frame">
+            <!-- Simulated Phone Wrapper -->
+            <div class="phone-container">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <!-- Screen State 1: Typing Code -->
+                <div class="screen-code" id="phone-code-screen">
+                  <div class="code-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="tab-name">main.dart</span>
+                  </div>
+                  <pre class="code-content"><code id="code-typing-area"></code></pre>
+                </div>
+                
+                <!-- Screen State 2: Active Rendered Flutter UI -->
+                <div class="screen-ui" id="phone-ui-screen">
+                  <div class="app-status-bar">
+                    <span class="status-time">09:41</span>
+                    <div class="status-icons">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.9-1.9C9.07 19.64 10.47 20 12 20c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 15c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M17 5H7a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3zm1 11a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v8z"/></svg>
+                    </div>
+                  </div>
+                  <div class="app-navbar">
+                    <span class="app-title">ProfileApp</span>
+                    <span class="hot-reload-flash" id="hot-reload-flash">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    </span>
+                  </div>
+                  <div class="app-body">
+                    <div class="app-card">
+                      <div class="app-avatar-row">
+                        <img src="assets/profile.jpg" alt="Abdo Salah" class="app-avatar">
+                        <div>
+                          <div class="app-name">Abdelrahman Salah</div>
+                          <div class="app-role">Flutter Developer</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="app-section-title">Core Competencies</div>
+                    <div class="app-grid">
+                      <div class="app-grid-item">
+                        <div class="app-item-icon color-teal">F</div>
+                        <div class="app-item-label">Flutter</div>
+                      </div>
+                      <div class="app-grid-item">
+                        <div class="app-item-icon color-cyan">D</div>
+                        <div class="app-item-label">Dart</div>
+                      </div>
+                      <div class="app-grid-item">
+                        <div class="app-item-icon color-blue">C</div>
+                        <div class="app-item-label">Cubit</div>
+                      </div>
+                      <div class="app-grid-item">
+                        <div class="app-item-icon color-purple">A</div>
+                        <div class="app-item-label">APIs</div>
+                      </div>
+                    </div>
+                    <div class="app-section-title">Recent Metric</div>
+                    <div class="app-stat-card">
+                      <div class="app-stat-value">98.4%</div>
+                      <div class="app-stat-desc">App Performance Rate</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Scroll indicator & progress line -->
+      <a href="#about" class="scroll-indicator" aria-label="Scroll Down">
+        <span class="mouse">
+          <span class="wheel"></span>
+        </span>
+        <span class="arrow"></span>
+      </a>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="section about-section scroll-reveal-el">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        
+        <div class="about-grid">
+          <div class="about-visual">
+            <div class="about-avatar-container" id="avatar-3d-container">
+              <!-- Double rotating border rings -->
+              <div class="avatar-ring ring-outer"></div>
+              <div class="avatar-ring ring-inner"></div>
+              
+              <!-- Floating Tech Badges -->
+              <div class="floating-badge badge-flutter">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M14.3 2.3L5 11.6l4.7 4.7 9.3-9.3zM21.3 2.3L12 11.6l3.1 3.1 6.2-6.2zM15.1 19.3l-3.1-3.1-4.7 4.7 7.8 7.8 7.8-7.8z"/></svg>
+                <span>Flutter</span>
+              </div>
+              <div class="floating-badge badge-dart">
+                <span class="mono-badge">Dart</span>
+              </div>
+
+              <!-- Main Avatar Card -->
+              <div class="about-avatar-card">
+                <img src="assets/profile.jpg" alt="Abdelrahman Salah" class="about-avatar-img">
+                <div class="avatar-card-overlay"></div>
+              </div>
+            </div>
+            
+            <div class="about-quick-stats">
+              <div class="stat-box">
+                <span class="stat-number">4+</span>
+                <span class="stat-label">Years University (2022-2026)</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-info">
+            <h3 class="about-heading">Passionate Flutter Developer Focused on Clean UI &amp; Robust Architecture</h3>
+            <p class="about-text">
+              I am Abdelrahman Mohamed Salah Eldin Farag, currently pursuing a Bachelor of Computer and Information Sciences at Zagazig University (2022–2026). My technical journey is centered on building clean, intuitive, and high-performance mobile applications.
+            </p>
+            <p class="about-text">
+              With a solid foundation in software engineering principles, Dart programming, and mobile app design guidelines, I specialize in crafting pixel-perfect, responsive user interfaces. I place high priority on clean codebases, implementing robust architectural patterns like MVVM and Clean Architecture, coupled with reactive state management using Cubit.
+            </p>
+            <p class="about-text">
+              Whether working independently as a freelancer (ready for contracts on Kafiil and Nafezly) or collaborating inside a development team, I thrive on solving complex API integration challenges and optimizing application performance to deliver exceptional user experiences.
+            </p>
+            
+            <!-- Quick personal metadata -->
+            <ul class="about-details">
+              <li><strong>Name:</strong> Abdelrahman Mohamed Salah</li>
+              <li><strong>Education:</strong> Computers &amp; Information, Zagazig University</li>
+              <li><strong>Location:</strong> Zagazig, Egypt</li>
+              <li><strong>Availability:</strong> Available for Work</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK SECTION -->
+    <section id="tech-stack" class="section tech-stack-section scroll-reveal-el">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Tech Stack</h2>
+          <p class="section-subtitle">A curated set of technologies I use to build production-grade mobile systems</p>
+        </div>
+
+        <div class="stack-grid">
+          <!-- Core Technologies -->
+          <div class="stack-category">
+            <h3 class="category-title">Core</h3>
+            <div class="badges-grid">
+              <div class="stack-badge" data-tech="flutter">
+                <span class="badge-icon">F</span>
+                <span class="badge-name">Flutter</span>
+              </div>
+              <div class="stack-badge" data-tech="dart">
+                <span class="badge-icon">D</span>
+                <span class="badge-name">Dart</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Architecture & State -->
+          <div class="stack-category">
+            <h3 class="category-title">Architecture</h3>
+            <div class="badges-grid">
+              <div class="stack-badge" data-tech="cubit">
+                <span class="badge-icon">C</span>
+                <span class="badge-name">Cubit</span>
+              </div>
+              <div class="stack-badge" data-tech="mvvm">
+                <span class="badge-icon">M</span>
+                <span class="badge-name">MVVM</span>
+              </div>
+              <div class="stack-badge" data-tech="clean-architecture">
+                <span class="badge-icon">A</span>
+                <span class="badge-name">Clean Arch</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Networking & Data -->
+          <div class="stack-category">
+            <h3 class="category-title">Networking &amp; Data</h3>
+            <div class="badges-grid">
+              <div class="stack-badge" data-tech="rest-api">
+                <span class="badge-icon">R</span>
+                <span class="badge-name">REST API</span>
+              </div>
+              <div class="stack-badge" data-tech="dio">
+                <span class="badge-icon">D</span>
+                <span class="badge-name">Dio</span>
+              </div>
+              <div class="stack-badge" data-tech="json">
+                <span class="badge-icon">J</span>
+                <span class="badge-name">JSON</span>
+              </div>
+              <div class="stack-badge" data-tech="local-notifications">
+                <span class="badge-icon">N</span>
+                <span class="badge-name">Local Notifications</span>
+              </div>
+              <div class="stack-badge" data-tech="material-design">
+                <span class="badge-icon">M</span>
+                <span class="badge-name">Material Design</span>
+              </div>
+              <div class="stack-badge" data-tech="responsive-ui">
+                <span class="badge-icon">U</span>
+                <span class="badge-name">Responsive UI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Firebase services -->
+          <div class="stack-category">
+            <h3 class="category-title">Firebase</h3>
+            <div class="badges-grid">
+              <div class="stack-badge" data-tech="firebase">
+                <span class="badge-icon">F</span>
+                <span class="badge-name">Firebase</span>
+              </div>
+              <div class="stack-badge" data-tech="firebase-auth">
+                <span class="badge-icon">A</span>
+                <span class="badge-name">Firebase Auth</span>
+              </div>
+              <div class="stack-badge" data-tech="firestore">
+                <span class="badge-icon">F</span>
+                <span class="badge-name">Cloud Firestore</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Version Control & Tools -->
+          <div class="stack-category">
+            <h3 class="category-title">Tools</h3>
+            <div class="badges-grid">
+              <div class="stack-badge" data-tech="git">
+                <span class="badge-icon">G</span>
+                <span class="badge-name">Git</span>
+              </div>
+              <div class="stack-badge" data-tech="github">
+                <span class="badge-icon">G</span>
+                <span class="badge-name">GitHub</span>
+              </div>
+              <div class="stack-badge" data-tech="github-actions">
+                <span class="badge-icon">A</span>
+                <span class="badge-name">GitHub Actions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section skills-section scroll-reveal-el">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Core Skills</h2>
+          <p class="section-subtitle">Key engineering competencies and practical capabilities</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Card 1 -->
+          <div class="skill-card">
+            <div class="skill-icon color-teal">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </div>
+            <h3 class="skill-title">Mobile App Development</h3>
+            <p class="skill-description">Building feature-rich cross-platform applications for iOS and Android environments using Dart.</p>
+          </div>
+
+          <!-- Skill Card 2 -->
+          <div class="skill-card">
+            <div class="skill-icon color-cyan">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="none"/><path d="M12 6V12L16 14"/></svg>
+            </div>
+            <h3 class="skill-title">UI/UX Implementation</h3>
+            <p class="skill-description">Translating complex designs into pixel-perfect, highly fluid UI/UX layouts utilizing Material Design guidelines.</p>
+          </div>
+
+          <!-- Skill Card 3 -->
+          <div class="skill-card">
+            <div class="skill-icon color-teal">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/></svg>
+            </div>
+            <h3 class="skill-title">Responsive Design</h3>
+            <p class="skill-description">Ensuring applications adjust dynamic screens perfectly across compact mobile, tablets, and folding screens.</p>
+          </div>
+
+          <!-- Skill Card 4 -->
+          <div class="skill-card">
+            <div class="skill-icon color-cyan">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+            </div>
+            <h3 class="skill-title">State Management</h3>
+            <p class="skill-description">Architecting unidirectional reactive flows using Cubit and Bloc to cleanly separate business logic from design views.</p>
+          </div>
+
+          <!-- Skill Card 5 -->
+          <div class="skill-card">
+            <div class="skill-icon color-teal">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3 class="skill-title">API Integration</h3>
+            <p class="skill-description">Connecting endpoints seamlessly using HTTP clients like Dio, handling JSON parsing, status codes, and error logging.</p>
+          </div>
+
+          <!-- Skill Card 6 -->
+          <div class="skill-card">
+            <div class="skill-icon color-cyan">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 class="skill-title">Firebase Integration</h3>
+            <p class="skill-description">Implementing real-time cloud datastores, user authentication flows, and push alerts with Google Firebase SDK.</p>
+          </div>
+
+          <!-- Skill Card 7 -->
+          <div class="skill-card">
+            <div class="skill-icon color-teal">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <h3 class="skill-title">Problem Solving</h3>
+            <p class="skill-description">Analyzing algorithms, debugging logical faults, and resolving structural execution issues efficiently.</p>
+          </div>
+
+          <!-- Skill Card 8 -->
+          <div class="skill-card">
+            <div class="skill-icon color-cyan">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            </div>
+            <h3 class="skill-title">Software Architecture</h3>
+            <p class="skill-description">Designing modular, testable, and scale-friendly components following clean architecture guidelines.</p>
+          </div>
+
+          <!-- Skill Card 9 -->
+          <div class="skill-card">
+            <div class="skill-icon color-teal">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3 class="skill-title">Performance Optimization</h3>
+            <p class="skill-description">Profiling layouts to limit rebuilt frames, optimize cache layouts, and minimize asset size footprints.</p>
+          </div>
+
+          <!-- Skill Card 10 -->
+          <div class="skill-card">
+            <div class="skill-icon color-cyan">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6M9 9l6 6"/></svg>
+            </div>
+            <h3 class="skill-title">Debugging</h3>
+            <p class="skill-description">Utilizing DevTools, reading error stack traces, profiling memory usage, and fixing memory leaks.</p>
+          </div>
+
+          <!-- Skill Card 11 -->
+          <div class="skill-card">
+            <div class="skill-icon color-teal">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="skill-title">Team Collaboration</h3>
+            <p class="skill-description">Participating in Git workflows, code reviews, and collaborating on task distributions in agile environments.</p>
+          </div>
+
+          <!-- Skill Card 12 -->
+          <div class="skill-card">
+            <div class="skill-icon color-cyan">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 1 0 10 10V2z"/><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/></svg>
+            </div>
+            <h3 class="skill-title">Self Learning</h3>
+            <p class="skill-description">Constantly updating technical skills with industry trends, documentation reviews, and testing newer API versions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="section services-section scroll-reveal-el">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Services</h2>
+          <p class="section-subtitle">Professional freelance and contract engineering services I provide</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service Card 1 -->
+          <div class="service-card">
+            <div class="service-icon-bg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00C896" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </div>
+            <h3 class="service-title">Flutter App Development</h3>
+            <p class="service-description">Full-cycle mobile app design and development for iOS &amp; Android. Cross-platform engineering from architectural setup to play store deployments.</p>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="service-card">
+            <div class="service-icon-bg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 class="service-title">Firebase Integration</h3>
+            <p class="service-description">Integrating authentication rules, secure cloud firestore database structures, remote configs, analytics trackers, and FCM push notifications.</p>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="service-card">
+            <div class="service-icon-bg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00C896" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3 class="service-title">REST API Integration</h3>
+            <p class="service-description">Connecting and networking frontend views with backend servers using standard structures, JSON serialization, and Dio client token-interceptors.</p>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div class="service-card">
+            <div class="service-icon-bg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <h3 class="service-title">Bug Fixing</h3>
+            <p class="service-description">Resolving UI flaws, performance bottlenecks, race conditions, memory leaks, and logical inconsistencies within existing Flutter codebases.</p>
+          </div>
+
+          <!-- Service Card 5 -->
+          <div class="service-card">
+            <div class="service-icon-bg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00C896" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
+            </div>
+            <h3 class="service-title">Responsive UI Conversion</h3>
+            <p class="service-description">Updating fixed-width designs to adapt perfectly to tablet screen widths, high-density devices, and custom orientation transitions.</p>
+          </div>
+
+          <!-- Service Card 6 -->
+          <div class="service-card">
+            <div class="service-icon-bg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6V12L16 14"/></svg>
+            </div>
+            <h3 class="service-title">App Performance Optimization</h3>
+            <p class="service-description">Improving frame rates, reducing widget rebuilding overhead, pre-loading images/data, and reducing APK build sizes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section id="projects" class="section projects-section scroll-reveal-el">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Explore real-world projects, architectural layouts, and code structures</p>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- Project 1: MediMate -->
+          <div class="project-card" data-project-id="medimate">
+            <div class="project-card-image">
+              <img src="assets/projects/medimate_preview.png" alt="MediMate Medication App Mockup" loading="lazy">
+              <div class="project-card-overlay">
+                <span class="view-tag">View Details</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-meta">
+                <span class="project-cat">Graduation Project</span>
+              </div>
+              <h3 class="project-title">MediMate (صيدلتي)</h3>
+              <p class="project-desc">A comprehensive smart medicine management application with reminders, family profiles, inventory tracking, and notifications.</p>
+              <div class="project-tags">
+                <span>Flutter</span>
+                <span>Firebase</span>
+                <span>Cubit</span>
+                <span>Local Notifications</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary project-details-btn">View Full Details</button>
+                <a href="https://github.com/Abdosalah4" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline btn-icon" aria-label="MediMate GitHub Profile Link">
+                  <span>GitHub</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- Inline Detail Expandable Panel Container -->
+        <div class="project-detail-panel" id="project-detail-panel">
+          <button class="close-panel-btn" id="close-panel-btn" aria-label="Close Panel">&times;</button>
+          
+          <div class="panel-layout">
+            <!-- Left Side: Interactive Specs -->
+            <div class="panel-content">
+              <div class="panel-badge" id="panel-project-cat">Category</div>
+              <h3 class="panel-project-title" id="panel-project-title">Project Title</h3>
+              
+              <p class="panel-overview" id="panel-project-overview">Overview content...</p>
+              
+              <div class="panel-grid-sections">
+                <div class="panel-sec">
+                  <h4>The Problem</h4>
+                  <p id="panel-project-problem">Problem detail text...</p>
+                </div>
+                <div class="panel-sec">
+                  <h4>The Solution</h4>
+                  <p id="panel-project-solution">Solution detail text...</p>
+                </div>
+              </div>
+
+              <div class="panel-sec">
+                <h4>Key Features</h4>
+                <ul class="panel-features-list" id="panel-project-features">
+                  <!-- Dynamic Features -->
+                </ul>
+              </div>
+
+              <div class="panel-grid-sections">
+                <div class="panel-sec">
+                  <h4>Architecture &amp; State</h4>
+                  <p id="panel-project-architecture">Architecture detail text...</p>
+                </div>
+                <div class="panel-sec">
+                  <h4>Challenges &amp; Lessons</h4>
+                  <p id="panel-project-lessons">Lessons detail text...</p>
+                </div>
+              </div>
+
+              <div class="panel-sec">
+                <h4>Technologies Used</h4>
+                <div class="project-tags" id="panel-project-tech">
+                  <!-- Dynamic Tech Tags -->
+                </div>
+              </div>
+              
+              <div class="panel-actions" id="panel-project-actions">
+                <!-- Action Buttons will be rendered conditionally -->
+              </div>
+            </div>
+
+            <!-- Right Side: Graphic Visual Mockup -->
+            <div class="panel-preview">
+              <div class="panel-mockup-container" id="panel-mockup-media-container">
+                <img src="" id="panel-project-mockup" alt="Project Visual mockup" class="panel-mockup-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION (Timeline) -->
+    <section id="experience" class="section experience-section scroll-reveal-el">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Development Experience</h2>
+          <p class="section-subtitle">My professional training, academic roadmap, and freelance services</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Entry 1: Graduation Project -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2026</div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Graduation Project — MediMate (صيدلتي)</h3>
+              <div class="timeline-sub">Flutter Developer</div>
+              <p class="timeline-text">
+                Developed MediMate (صيدلتي), a medicine management mobile application as my graduation project using Flutter and Firebase.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Designed and implemented responsive user interfaces.</li>
+                <li>Integrated Firebase Authentication and Cloud Firestore.</li>
+                <li>Built a medicine reminder system using Local Notifications.</li>
+                <li>Developed medicine inventory management and family profiles.</li>
+                <li>Applied MVVM and Clean Architecture principles.</li>
+                <li>Managed application state using Cubit.</li>
+                <li>Integrated REST APIs and optimized application performance.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Flutter</span><span>Dart</span><span>Firebase</span><span>Cloud Firestore</span><span>Cubit</span><span>MVVM</span><span>Clean Architecture</span><span>REST APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Entry 2: NTI Training Program -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2026</div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Flutter Mobile Application Development Program (120 Hours)</h3>
+              <div class="timeline-sub">National Telecommunication Institute (NTI)</div>
+              <p class="timeline-text">
+                Successfully completed an intensive 120-hour Flutter training program focused on modern mobile application development.
+              </p>
+              <div class="timeline-tags">
+                <span>Flutter &amp; Dart</span><span>Firebase</span><span>REST APIs</span><span>Cubit State Management</span><span>MVVM</span><span>Clean Architecture</span><span>Git &amp; GitHub</span><span>Responsive UI Development</span><span>Local Notifications</span><span>Mobile App Best Practices</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Entry 3: Personal Projects -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2025 - Present</div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Personal Flutter Projects</h3>
+              <div class="timeline-sub">Flutter Developer</div>
+              <p class="timeline-text">
+                Designed and developed multiple Flutter applications to strengthen my practical experience and improve my mobile development skills.
+              </p>
+              <ul class="timeline-bullets">
+                <li><strong>MediMate (صيدلتي):</strong> Complete smart pharmacy and medication reminders manager.</li>
+                <li><strong>E-Commerce App:</strong> E-commerce interface, state caching, and product catalogs.</li>
+                <li><strong>Weather App:</strong> Meteorological API client queries with Dio and responsive layouts.</li>
+                <li><strong>ToDo App:</strong> Local database task manager designed with clean MVVM state.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Responsive UI Design</span><span>Firebase Integration</span><span>REST API Integration</span><span>Clean Code</span><span>State Management</span><span>Performance Optimization</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Entry 4: Freelance Experience -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2026</div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Freelance Experience</h3>
+              <div class="timeline-sub">Kafiil &amp; Nafezly</div>
+              <p class="timeline-text">
+                Completed several paid Flutter tasks for clients through freelance platforms. Gained practical experience communicating with clients, understanding project requirements, and delivering tasks on time.
+              </p>
+              <ul class="timeline-bullets">
+                <li>UI improvements</li>
+                <li>Bug fixing</li>
+                <li>Feature enhancements</li>
+                <li>Responsive layout adjustments</li>
+                <li>Code maintenance</li>
+              </ul>
+              <div class="timeline-links">
+                <a href="https://kafiil.com/u/abdo_salah7/services" target="_blank" rel="noopener" class="btn btn-xs btn-outline">Kafiil Profile</a>
+                <a href="https://nafezly.com/u/abdo_salah_" target="_blank" rel="noopener" class="btn btn-xs btn-outline">Nafezly Profile</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Entry 5: Continuous Learning -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024 - Present</div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Continuous Learning</h3>
+              <div class="timeline-sub">Flutter &amp; Dart Ecosystems</div>
+              <p class="timeline-text">
+                Continuously improving my Flutter development skills through practical projects, official documentation, technical articles, and online courses.
+              </p>
+              <div class="timeline-tags">
+                <span>Flutter Ecosystem</span><span>Software Architecture</span><span>Firebase Services</span><span>Mobile Performance Optimization</span><span>UI/UX Best Practices</span><span>Clean Code Principles</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES SECTION -->
+    <section id="certificates" class="section certificates-section scroll-reveal-el">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Certificates</h2>
+          <p class="section-subtitle">Academic training records and professional verifications</p>
+        </div>
+
+        <div class="certificates-grid">
+          <!-- Certificate Card 1 -->
+          <div class="certificate-card">
+            <div class="cert-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00C896" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <h3 class="cert-title">Flutter &amp; Dart Development</h3>
+            <p class="cert-issuer">Udemy — Instructor Tharwat Samy</p>
+            <div class="cert-status-badge">Verification in Progress</div>
+          </div>
+
+          <!-- Certificate Card 2 -->
+          <div class="certificate-card">
+            <div class="cert-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h3 class="cert-title">Mobile Systems Architecture</h3>
+            <p class="cert-issuer">Zagazig University Certification</p>
+            <div class="cert-status-badge">Coming Soon</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GITHUB live STATS SECTION -->
+    <section id="github" class="section github-section scroll-reveal-el">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Live GitHub Stats</h2>
+          <p class="section-subtitle">Real-time repository statistics and contribution details fetched directly from my GitHub profile</p>
+        </div>
+
+        <div class="github-stats-container" id="github-container">
+          <!-- Live profile details -->
+          <div class="github-profile-card">
+            <div class="github-profile-header">
+              <div class="github-avatar-holder">
+                <img src="assets/profile.jpg" id="github-avatar" alt="GitHub Profile Avatar" class="github-avatar-img">
+              </div>
+              <div class="github-user-info">
+                <h3 class="github-name" id="github-name">Abdelrahman Salah</h3>
+                <a href="https://github.com/Abdosalah4" target="_blank" rel="noopener noreferrer" class="github-username" id="github-username">@Abdosalah4</a>
+                <p class="github-bio" id="github-bio">Flutter Developer | Building high quality applications using Dart and Flutter.</p>
+              </div>
+            </div>
+            
+            <div class="github-counters">
+              <div class="counter-item">
+                <span class="counter-num" id="github-repos">--</span>
+                <span class="counter-label">Public Repos</span>
+              </div>
+              <div class="counter-item">
+                <span class="counter-num" id="github-followers">--</span>
+                <span class="counter-label">Followers</span>
+              </div>
+              <div class="counter-item">
+                <span class="counter-num" id="github-following">--</span>
+                <span class="counter-label">Following</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Top languages / Activity mockup inside widget -->
+          <div class="github-languages-card">
+            <h3 class="card-title">Top Languages &amp; Repositories</h3>
+            
+            <!-- Repository List (Dynamic) -->
+            <div class="github-repos-list" id="github-repos-list">
+              <!-- Loading indicators -->
+              <div class="github-loading">Loading live GitHub data...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section scroll-reveal-el">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-subtitle">Let's discuss project opportunities, internship roles, or freelance contracts</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact information details -->
+          <div class="contact-info-panel">
+            <h3 class="contact-info-title">Let's build something amazing together</h3>
+            <p class="contact-info-text">
+              I am open to discussions regarding Flutter app contracts, mobile engineering roles, internship slots, or architectural consulting. Reach out via email, phone, or any of my social profiles.
+            </p>
+            
+            <div class="contact-links">
+              <!-- Contact Item: Location -->
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="contact-item-details">
+                  <span class="contact-label">Location</span>
+                  <span class="contact-value">Zagazig, Egypt</span>
+                </div>
+              </div>
+
+              <!-- Contact Item: Email -->
+              <a href="mailto:abdosalah112233444@gmail.com" class="contact-item">
+                <div class="contact-item-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="contact-item-details">
+                  <span class="contact-label">Email</span>
+                  <span class="contact-value">abdosalah112233444@gmail.com</span>
+                </div>
+              </a>
+
+              <!-- Contact Item: Phone -->
+              <a href="tel:+201024713596" class="contact-item">
+                <div class="contact-item-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="contact-item-details">
+                  <span class="contact-label">Phone</span>
+                  <span class="contact-value">+20 1024713596</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form Panel -->
+          <div class="contact-form-panel">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <input type="text" id="contact-name" class="form-control" placeholder=" " required>
+                <label for="contact-name" class="form-label">Your Name</label>
+              </div>
+              
+              <div class="form-group">
+                <input type="email" id="contact-email" class="form-control" placeholder=" " required>
+                <label for="contact-email" class="form-label">Your Email</label>
+              </div>
+              
+              <div class="form-group">
+                <textarea id="contact-message" class="form-control" placeholder=" " rows="5" required></textarea>
+                <label for="contact-message" class="form-label">Message</label>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" id="submit-btn" class="btn btn-primary btn-full btn-icon">
+                <span>Send Message</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+              
+              <!-- Form Success/Error Message Container -->
+              <div class="form-status" id="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container footer-container">
+      <div class="footer-info">
+        <a href="#hero" class="logo">
+          <span class="logo-accent">&lt;</span>AbdoSalah<span class="logo-accent"> /&gt;</span>
+        </a>
+        <p class="footer-desc">Designing and engineering production-ready mobile systems using Flutter &amp; Dart.</p>
+      </div>
+
+      <!-- Social and back-to-top layout -->
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 Abdelrahman Mohamed Salah. All rights reserved.</p>
+        
+        <div class="footer-socials">
+          <a href="https://github.com/Abdosalah4" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/abdelrahman-salah-829b8325a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="mailto:abdosalah112233444@gmail.com" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+
+        <a href="#hero" class="back-to-top-btn" id="back-to-top" aria-label="Back to Top">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+</body>
+</html>
