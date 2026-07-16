@@ -2498,11 +2498,14 @@ a.contact-item:hover {
 
   .panel-preview {
     order: -1;
-    height: 240px;
+    height: auto;
+    background: transparent;
+    border: none;
+    padding: 10px 0;
   }
 
   .panel-mockup-container {
-    max-width: 160px;
+    max-width: 100%;
   }
 
   .panel-features-list {
