@@ -154,7 +154,7 @@ def generate():
         "working inside collaborative sprints or delivering standalone freelance solutions."
     )
     pdf.multi_cell(126, 4, summary_text)
-    my += 25
+    my += 30
     
     add_main_section("Experience")
     
@@ -453,7 +453,7 @@ def generate_ats():
         "working inside collaborative sprints or delivering standalone freelance solutions."
     )
     pdf.multi_cell(126, 4, summary_text)
-    my += 25
+    my += 30
 
     add_main_section("Experience")
 
