@@ -266,7 +266,7 @@ const projectsData = {
     tech: ['Flutter', 'Dart', 'Firebase Auth', 'Cloud Firestore', 'Cubit', 'Local Notifications', 'Material 3', 'Clean Architecture'],
     mockup: 'assets/projects/medimate_preview.png',
     videoEmbed: `<iframe src="https://www.youtube.com/embed/y9QMl1prIdQ" allowfullscreen></iframe>`,
-    videoVertical: false,
+    videoVertical: true,
     links: {
       github: 'https://github.com/Abdosalah4',
       video: 'https://www.youtube.com/watch?v=y9QMl1prIdQ'
