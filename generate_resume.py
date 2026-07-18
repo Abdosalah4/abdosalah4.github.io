@@ -26,8 +26,8 @@ def generate():
     
     # Name & Title
     pdf.set_text_color(255, 255, 255)
-    pdf.set_font("helvetica", "B", 11)
-    pdf.text(15, 47, "Abdelrahman Salah")
+    pdf.set_font("helvetica", "B", 10)
+    pdf.text(12, 49, "Abdelrahman Salah Eldin")
     
     pdf.set_text_color(0, 200, 150)
     pdf.set_font("courier", "B", 8)
@@ -124,8 +124,8 @@ def generate():
     # --- MAIN CONTENT COLUMN (x=76) ---
     # Header Info
     pdf.set_text_color(255, 255, 255)
-    pdf.set_font("helvetica", "B", 18)
-    pdf.text(76, 20, "Abdelrahman Mohamed Salah")
+    pdf.set_font("helvetica", "B", 16)
+    pdf.text(76, 20, "Abdelrahman Mohamed Salah Eldin")
     pdf.set_text_color(0, 200, 150)
     pdf.set_font("courier", "B", 11)
     pdf.text(76, 26, "FLUTTER DEVELOPER")
@@ -328,8 +328,8 @@ def generate_ats():
 
     # Name & Title
     pdf.set_text_color(*C_HEADING)
-    pdf.set_font("helvetica", "B", 11)
-    pdf.text(15, 47, "Abdelrahman Salah")
+    pdf.set_font("helvetica", "B", 10)
+    pdf.text(12, 49, "Abdelrahman Salah Eldin")
 
     pdf.set_text_color(*C_SUBTITLE)
     pdf.set_font("courier", "B", 8)
@@ -423,8 +423,8 @@ def generate_ats():
 
     # --- MAIN CONTENT COLUMN (x=76) ---
     pdf.set_text_color(*C_HEADING)
-    pdf.set_font("helvetica", "B", 18)
-    pdf.text(76, 20, "Abdelrahman Mohamed Salah")
+    pdf.set_font("helvetica", "B", 16)
+    pdf.text(76, 20, "Abdelrahman Mohamed Salah Eldin")
     pdf.set_text_color(*C_SUBTITLE)
     pdf.set_font("courier", "B", 11)
     pdf.text(76, 26, "FLUTTER DEVELOPER")
